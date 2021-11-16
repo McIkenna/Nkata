@@ -19,6 +19,9 @@
 		BD7F19602740D523002FC5B9 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F195F2740D523002FC5B9 /* VideoPlayerViewController.swift */; };
 		BD7F19622740D546002FC5B9 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19612740D546002FC5B9 /* NewConversationViewController.swift */; };
 		BD7F19642740D55A002FC5B9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19632740D55A002FC5B9 /* ProfileViewController.swift */; };
+		BD7F19682740DA24002FC5B9 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19672740DA24002FC5B9 /* CustomColor.swift */; };
+		BD7F196A2740E218002FC5B9 /* myDesignColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19692740E218002FC5B9 /* myDesignColor.swift */; };
+		BD7F196C2740F278002FC5B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F196B2740F278002FC5B9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		BD7F195F2740D523002FC5B9 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		BD7F19612740D546002FC5B9 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		BD7F19632740D55A002FC5B9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BD7F19672740DA24002FC5B9 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		BD7F19692740E218002FC5B9 /* myDesignColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDesignColor.swift; sourceTree = "<group>"; };
+		BD7F196B2740F278002FC5B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		BD7F193F2740D23F002FC5B9 /* Nkata */ = {
 			isa = PBXGroup;
 			children = (
+				BD7F19662740DA01002FC5B9 /* Design */,
 				BD7F19572740D366002FC5B9 /* Resources */,
 				BD7F19562740D355002FC5B9 /* ViewModel */,
 				BD7F19552740D34D002FC5B9 /* View */,
@@ -80,9 +87,8 @@
 		BD7F19542740D342002FC5B9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BD7F19652740D6DE002FC5B9 /* Authenticate */,
 				BD7F19442740D23F002FC5B9 /* ConversationsViewController.swift */,
-				BD7F19592740D4DE002FC5B9 /* LoginViewController.swift */,
-				BD7F195B2740D4EF002FC5B9 /* RegisterViewController.swift */,
 				BD7F195D2740D50E002FC5B9 /* PhotoViewerViewController.swift */,
 				BD7F195F2740D523002FC5B9 /* VideoPlayerViewController.swift */,
 				BD7F19612740D546002FC5B9 /* NewConversationViewController.swift */,
@@ -112,6 +118,7 @@
 			children = (
 				BD7F19402740D23F002FC5B9 /* AppDelegate.swift */,
 				BD7F19422740D23F002FC5B9 /* SceneDelegate.swift */,
+				BD7F196B2740F278002FC5B9 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -123,6 +130,24 @@
 				BD7F194B2740D242002FC5B9 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BD7F19652740D6DE002FC5B9 /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				BD7F19592740D4DE002FC5B9 /* LoginViewController.swift */,
+				BD7F195B2740D4EF002FC5B9 /* RegisterViewController.swift */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		BD7F19662740DA01002FC5B9 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				BD7F19672740DA24002FC5B9 /* CustomColor.swift */,
+				BD7F19692740E218002FC5B9 /* myDesignColor.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +228,10 @@
 				BD7F19602740D523002FC5B9 /* VideoPlayerViewController.swift in Sources */,
 				BD7F19412740D23F002FC5B9 /* AppDelegate.swift in Sources */,
 				BD7F19642740D55A002FC5B9 /* ProfileViewController.swift in Sources */,
+				BD7F196C2740F278002FC5B9 /* Extensions.swift in Sources */,
 				BD7F19432740D23F002FC5B9 /* SceneDelegate.swift in Sources */,
+				BD7F196A2740E218002FC5B9 /* myDesignColor.swift in Sources */,
+				BD7F19682740DA24002FC5B9 /* CustomColor.swift in Sources */,
 				BD7F195E2740D50E002FC5B9 /* PhotoViewerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,8 +377,8 @@
 		BD7F19522740D242002FC5B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A2AL553RHN;
@@ -379,8 +407,8 @@
 		BD7F19532740D242002FC5B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A2AL553RHN;
