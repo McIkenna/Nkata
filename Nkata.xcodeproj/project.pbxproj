@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD3445192745E90900226E34 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3445182745E90800226E34 /* DatabaseManager.swift */; };
 		BD7F19412740D23F002FC5B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19402740D23F002FC5B9 /* AppDelegate.swift */; };
 		BD7F19432740D23F002FC5B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19422740D23F002FC5B9 /* SceneDelegate.swift */; };
 		BD7F19452740D23F002FC5B9 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19442740D23F002FC5B9 /* ConversationsViewController.swift */; };
@@ -22,9 +23,14 @@
 		BD7F19682740DA24002FC5B9 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19672740DA24002FC5B9 /* CustomColor.swift */; };
 		BD7F196A2740E218002FC5B9 /* myDesignColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F19692740E218002FC5B9 /* myDesignColor.swift */; };
 		BD7F196C2740F278002FC5B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F196B2740F278002FC5B9 /* Extensions.swift */; };
+		BDE17DC645E93D43418DCBD4 /* Pods_Nkata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF60BCF52F8A6549E03E9CD /* Pods_Nkata.framework */; };
+		BDF4861F27443D84002257DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDF4861E27443D84002257DD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20A75D368AD54F10F71A408C /* Pods-Nkata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nkata.debug.xcconfig"; path = "Target Support Files/Pods-Nkata/Pods-Nkata.debug.xcconfig"; sourceTree = "<group>"; };
+		BCF60BCF52F8A6549E03E9CD /* Pods_Nkata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nkata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3445182745E90800226E34 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		BD7F193D2740D23F002FC5B9 /* Nkata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nkata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7F19402740D23F002FC5B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7F19422740D23F002FC5B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 		BD7F19672740DA24002FC5B9 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		BD7F19692740E218002FC5B9 /* myDesignColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDesignColor.swift; sourceTree = "<group>"; };
 		BD7F196B2740F278002FC5B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BDF4861E27443D84002257DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5FE04291A96E3D7D57A2CAB /* Pods-Nkata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nkata.release.xcconfig"; path = "Target Support Files/Pods-Nkata/Pods-Nkata.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE17DC645E93D43418DCBD4 /* Pods_Nkata.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		697E177ADDE44E40BC151EC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20A75D368AD54F10F71A408C /* Pods-Nkata.debug.xcconfig */,
+				C5FE04291A96E3D7D57A2CAB /* Pods-Nkata.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD7F19342740D23F002FC5B9 = {
 			isa = PBXGroup;
 			children = (
 				BD7F193F2740D23F002FC5B9 /* Nkata */,
 				BD7F193E2740D23F002FC5B9 /* Products */,
+				697E177ADDE44E40BC151EC1 /* Pods */,
+				D5E1F7D22B8C02C8B9E0B03C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +100,7 @@
 				BD7F19552740D34D002FC5B9 /* View */,
 				BD7F19542740D342002FC5B9 /* Controller */,
 				BD7F194E2740D242002FC5B9 /* Info.plist */,
+				BDF4861E27443D84002257DD /* GoogleService-Info.plist */,
 			);
 			path = Nkata;
 			sourceTree = "<group>";
@@ -119,6 +140,7 @@
 				BD7F19402740D23F002FC5B9 /* AppDelegate.swift */,
 				BD7F19422740D23F002FC5B9 /* SceneDelegate.swift */,
 				BD7F196B2740F278002FC5B9 /* Extensions.swift */,
+				BD3445182745E90800226E34 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -150,6 +172,14 @@
 			path = Design;
 			sourceTree = "<group>";
 		};
+		D5E1F7D22B8C02C8B9E0B03C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCF60BCF52F8A6549E03E9CD /* Pods_Nkata.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD7F19512740D242002FC5B9 /* Build configuration list for PBXNativeTarget "Nkata" */;
 			buildPhases = (
+				ACD13360C990A5EBADAC2BA5 /* [CP] Check Pods Manifest.lock */,
 				BD7F19392740D23F002FC5B9 /* Sources */,
 				BD7F193A2740D23F002FC5B9 /* Frameworks */,
 				BD7F193B2740D23F002FC5B9 /* Resources */,
+				56FA1A1370C33304F1EEBA29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,12 +241,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7F194D2740D242002FC5B9 /* LaunchScreen.storyboard in Resources */,
+				BDF4861F27443D84002257DD /* GoogleService-Info.plist in Resources */,
 				BD7F194A2740D242002FC5B9 /* Assets.xcassets in Resources */,
 				BD7F19482740D23F002FC5B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56FA1A1370C33304F1EEBA29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nkata/Pods-Nkata-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nkata/Pods-Nkata-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nkata/Pods-Nkata-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACD13360C990A5EBADAC2BA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nkata-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD7F19392740D23F002FC5B9 /* Sources */ = {
@@ -223,6 +298,7 @@
 			files = (
 				BD7F195A2740D4DE002FC5B9 /* LoginViewController.swift in Sources */,
 				BD7F195C2740D4EF002FC5B9 /* RegisterViewController.swift in Sources */,
+				BD3445192745E90900226E34 /* DatabaseManager.swift in Sources */,
 				BD7F19622740D546002FC5B9 /* NewConversationViewController.swift in Sources */,
 				BD7F19452740D23F002FC5B9 /* ConversationsViewController.swift in Sources */,
 				BD7F19602740D523002FC5B9 /* VideoPlayerViewController.swift in Sources */,
@@ -376,6 +452,7 @@
 		};
 		BD7F19522740D242002FC5B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A75D368AD54F10F71A408C /* Pods-Nkata.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -406,6 +483,7 @@
 		};
 		BD7F19532740D242002FC5B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5FE04291A96E3D7D57A2CAB /* Pods-Nkata.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;

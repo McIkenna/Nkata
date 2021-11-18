@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -24,7 +25,6 @@ class LoginViewController: UIViewController {
         field.returnKeyType = .continue
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
-       
         field.layer.borderColor = myDesignColor().flax.cgColor
         field.backgroundColor = .white
         field.placeholder = "Email Address...."
@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
         passwordField.returnKeyType = .done
         passwordField.layer.cornerRadius = 12
         passwordField.layer.borderWidth = 1
-       
+        passwordField.isSecureTextEntry = true
         passwordField.layer.borderColor = myDesignColor().flax.cgColor
         passwordField.backgroundColor = .white
         passwordField.placeholder = "Password...."
@@ -105,6 +105,18 @@ class LoginViewController: UIViewController {
             return
         }
         //Firebase Login
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {[weak self] authResult, error in
+            guard let strongSelf = self else {
+                return
+            }
+            guard let result = authResult, error == nil else{
+            print("User with email: \(email) does not exist")
+            return
+            }
+            let user = result.user
+            print("Logged in user: \(user)")
+            strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+        })
     }
     
     func alertUserLoginError(){
