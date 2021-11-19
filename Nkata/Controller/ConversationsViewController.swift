@@ -28,6 +28,7 @@ class ConversationsViewController: UIViewController {
     private func validateAuth(){
         
         if FirebaseAuth.Auth.auth().currentUser == nil {
+            //Possibly refactor cos it occurs twice
             let vc = LoginViewController()
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
